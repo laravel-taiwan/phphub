@@ -43,14 +43,7 @@
           {{ Form::text('title', null, ['class' => 'form-control', 'placeholder' => lang('Please write down a topic')]) }}
         </div>
 
-        <ul class="list-inline editor-tool">
-          <li class="active" id="edit-btn"><a href="javascript:void(0)" onclick="showEditor();" >{{ lang('Edit') }}</a></li>
-          <li id="preview-btn"><a href="javascript:void(0)" onclick="preview();" >{{ lang('Preview') }}</a></li>
-        </ul>
-
-        <div class="preview display-none markdown-reply box">
-{{ lang('No content.') }}..
-        </div>
+        @include('topics.partials.composing_help_block')
 
         <div class="form-group">
           {{ Form::textarea('body', null, ['class' => 'form-control',
@@ -64,12 +57,14 @@
           {{ Form::submit(lang('Publish'), ['class' => 'btn btn-primary', 'id' => 'topic-create-submit']) }}
         </div>
 
+        <div class="box preview markdown-body" id="preview-box" style="display:none;"></div>
+
       {{ Form::close() }}
 
     </div>
   </div>
 
-  <div class="col-sm-4 side-bar">
+  <div class="col-md-4 side-bar">
 
     @if ( $node )
 
@@ -133,14 +128,4 @@
   </div>
 </div>
 
-@stop
-
-@section('scripts')
-    <script src="{{ cdn('js/jquery.autosize.min.js') }}"></script>
-
-    <script>
-        $(document).ready(function(){
-            $('textarea').autosize();
-        });
-    </script>
 @stop

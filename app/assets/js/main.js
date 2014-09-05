@@ -10,10 +10,15 @@
             });
             $(document).on('pjax:end', function() {
                 NProgress.done();
+            });
+            $(document).on('pjax:complete', function() {
+                NProgress.done();
                 self.siteBootUp();
             });
+
             self.siteBootUp();
             self.initLightBox();
+            self.initNotificationsCount();
         },
 
         /*
@@ -28,6 +33,7 @@
             self.initScrollToTop();
             self.initTextareaAutoResize();
             self.initHeightLight();
+            self.initEditorPreview();
         },
 
         /**
@@ -54,7 +60,10 @@
         initTimeAgo: function(){
             moment.lang('zh-tw');
             $('.timeago').each(function(){
-                $(this).text( moment( $(this).text() ).fromNow());
+                var time_str = $(this).text();
+                if(moment(time_str, "YYYY-MM-DD HH:mm:ss", true).isValid()) {
+                    $(this).text( moment( new Date(time_str) ).fromNow());
+                }
             });
         },
 
@@ -131,6 +140,53 @@
             });
         },
 
+        /**
+         * Init post content preview
+         */
+        initEditorPreview: function() {
+            $("#reply_content").focus(function(event) {
+                $("#reply_notice").fadeIn(1500);
+                $("#preview-box").fadeIn(1500);
+                $("#preview-lable").fadeIn(1500);
+
+                if (!$("#reply_content").val()) {
+                    $("html, body").animate({ scrollTop: $(document).height()}, 1800);
+                }
+            });
+            $('#reply_content').keyup(function(){
+                var replyContent = $("#reply_content");
+                var oldContent = replyContent.val();
+
+                if (oldContent) {
+                    marked(oldContent, function (err, content) {
+                      $('#preview-box').html(content);
+                      emojify.run(document.getElementById('preview-box'));
+                    });
+                }
+            });
+        },
+
+        /**
+         * Notify user unread notifications when they stay on the
+         * page for too long.
+         */
+        initNotificationsCount: function(argumen) {
+            var original_title = document.title;
+            if (Config.user_id > 0) {
+                function scheduleGetNotification(){
+                    $.get( Config.routes.notificationsCount, function( data ) {
+                        var nCount = parseInt(data)
+                        if (nCount > 0) {
+                            $('#notification-count').text(nCount);
+                            $('#notification-count').hasClass('badge-important') || $('#notification-count').addClass('badge-important');
+                            document.title = '(' + nCount + ') '+ original_title;
+                        }
+                        setTimeout(scheduleGetNotification, 15000);
+                    });
+                };
+                setTimeout(scheduleGetNotification, 15000);
+            }
+        }
 
     }
     window.PHPHub = PHPHub;
@@ -140,30 +196,6 @@ $(document).ready(function()
 {
     PHPHub.init();
 });
-
-function preview(){
-	replyContent = $("#reply_content");
-	oldContent = replyContent.val();
-	replyContent.fadeOut();
-
-	if (oldContent) {
-		marked(oldContent, function (err, content) {
-		  $('.preview').html(content);
-		});
-	}
-
-	$('.preview').fadeIn();
-	$('#edit-btn').toggleClass('active');
-	$('#preview-btn').toggleClass('active');
-}
-
-function showEditor(){
-	$('.preview').fadeOut();
-	$('#reply_content').fadeIn();
-
-	$('#edit-btn').toggleClass('active');
-	$('#preview-btn').toggleClass('active');
-}
 
 // reply a reply
 function replyOne(username){
