@@ -52,7 +52,7 @@
          * `.timeago` class.
          */
         initTimeAgo: function(){
-            moment.lang('zh-cn');
+            moment.lang('zh-tw');
             $('.timeago').each(function(){
                 $(this).text( moment( $(this).text() ).fromNow());
             });
