@@ -15,7 +15,7 @@ var paths = {
             'app/assets/js/jquery.min.js',
             'app/assets/js/bootstrap.min.js',
             'app/assets/js/moment.min.js',
-            'app/assets/js/zh-cn.min.js',
+            'app/assets/js/zh-tw.min.js',
             'app/assets/js/emojify.min.js',
             'app/assets/js/jquery.scrollUp.js',
             'app/assets/js/jquery.pjax.js',
