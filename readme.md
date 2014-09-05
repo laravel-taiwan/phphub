@@ -24,7 +24,7 @@ The [phphub.org](http://phphub.org) site is entirely open source, and community 
 
 We use Laravel Homestead for local development. Please review the [Homestead documentation](http://laravel.com/docs/homestead) to install it.
 
-[ 中文版本的本地环境部署见这里 见 wiki](https://github.com/summerblue/phphub/wiki/PHPhub-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2)
+[ 中文版本的本地環境部署請參考 wiki](https://github.com/summerblue/phphub/wiki/PHPhub-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2)
 
 [Step by Step Guide to Setting up the PHPHub Development Environment](https://github.com/summerblue/phphub/wiki/Step-by-Step-Guide-to-Setting-up-the-PHPHub-Development-Environment)
 

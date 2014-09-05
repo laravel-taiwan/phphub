@@ -27,10 +27,10 @@
           </div>
           <div class="panel-body">
             <ul class="list">
-                <li><a href="http://laravel-china.org/">Laravel 4.2 文档</a></li>
+                <li><a href="http://laravel.tw/doc">Laravel 4.2 文件</a></li>
                 <li><a href="http://wulijun.github.io/php-the-right-way/">PHP The Right Way 中文版</a></li>
-                <li><a href="https://github.com/PizzaLiu/PHP-FIG">PHP-FIG 编程规范中文</a></li>
-                <li><a href="http://www.phpcomposer.com/">Composer 中文文档</a></li>
+                <li><a href="https://github.com/PizzaLiu/PHP-FIG">PHP-FIG 編程規範中文</a></li>
+                <li><a href="http://www.phpcomposer.com/">Composer 中文文件</a></li>
             </ul>
           </div>
         </div>

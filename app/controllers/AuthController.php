@@ -95,14 +95,14 @@ class AuthController extends BaseController implements GithubAuthenticatorListen
      * ----------------------------------------
      */
 
-    // 数据库找不到用户, 执行新用户注册
+    // 資料庫找不到使用者, 執行新使用者註冊
     public function userNotFound($githubData)
     {
         Session::put('userGithubData', $githubData);
         return Redirect::route('signup');
     }
 
-    // 数据库有用户信息, 登录用户
+    // 資料庫有使用者資訊, 登入使用者
     public function userFound($user)
     {
         Auth::login($user, true);
@@ -113,7 +113,7 @@ class AuthController extends BaseController implements GithubAuthenticatorListen
         return Redirect::intended();
     }
 
-    // 用户屏蔽
+    // 使用者封鎖
     public function userIsBanned($user)
     {
         return Redirect::route('home');

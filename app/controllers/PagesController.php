@@ -44,7 +44,7 @@ class PagesController extends \BaseController {
 	public function search()
 	{
 		$query = Purifier::clean(Input::get('q'));
-		return Redirect::away('https://www.google.com/search?q=site:phphub.org ' . $query, 301);
+		return Redirect::away('https://www.google.com/search?q=site:forum.laravel.tw' . $query, 301);
 	}
 
 	/**
@@ -55,8 +55,8 @@ class PagesController extends \BaseController {
 		$topics = Topic::excellent()->recent()->limit(20)->get();
 
 		$channel =[
-            'title' => 'PHPhub - PHP & Laravel的中文社区',
-            'description' => 'PHPhub是 PHP 和 Laravel 的中文社区，在这里我们讨论技术, 分享技术。',
+            'title' => 'Laravel 台灣 - 討論 PHP 與 Laravel 的好所在',
+            'description' => 'PHP 和 Laravel 的中文社群，在這裡我們討論技術, 分享技術。',
     		'link' => URL::route('feed')
     	];
 

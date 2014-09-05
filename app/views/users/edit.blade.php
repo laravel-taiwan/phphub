@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('title')
-编辑个人资料_@parent
+編輯個人資料_@parent
 @stop
 
 @section('content')

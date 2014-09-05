@@ -22,7 +22,7 @@
         <a name="reply{{ $reply->id }}" class="anchor" href="#reply{{ $reply->id }}" aria-hidden="true">#{{ $reply->id }}</a>
 
         <span class="operate pull-right">
-          <a href="{{ route('replies.vote', $reply->id) }}" title="赞一个" id="reply-up-vote-{{ $reply->id }}">
+          <a href="{{ route('replies.vote', $reply->id) }}" title="推一個" id="reply-up-vote-{{ $reply->id }}">
             <i class="fa fa-thumbs-o-up" style="font-size:14px;"></i>
             {{ $reply->vote_count }}
           </a>
@@ -34,7 +34,7 @@
             </a>
             <span> •  </span>
           @endif
-          <a class="fa fa-reply" href="javascript:void(0)" onclick="replyOne('{{{ $reply->user->name }}}');" title="回复 {{{ $reply->user->name }}}"></a>
+          <a class="fa fa-reply" href="javascript:void(0)" onclick="replyOne('{{{ $reply->user->name }}}');" title="回覆 {{{ $reply->user->name }}}"></a>
         </span>
 
       </div>
