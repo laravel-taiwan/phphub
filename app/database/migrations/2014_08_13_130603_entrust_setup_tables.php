@@ -72,7 +72,7 @@ class EntrustSetupTables extends Migration
         Schema::drop('permissions');
     }
 
-    public function setupFoundorAndBaseRolsPermission() 
+    public function setupFoundorAndBaseRolsPermission()
     {
         // Create Roles
         $founder = new Role;
