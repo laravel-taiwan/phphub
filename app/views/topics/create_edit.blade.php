@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('title')
-創建新話題_@parent
+建立新主題_@parent
 @stop
 
 @section('content')
