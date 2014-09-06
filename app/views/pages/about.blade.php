@@ -14,7 +14,7 @@
 
             <h2 id="toc_2">關於新手問題</h2>
 
-            <p>這個社群不是用來問新手問題的, 如果你是新手, 請先看 <a href="http://www.phptherightway.com/">PHP The Right Way</a> , 裡面有中文版本, 此文件能為你構建一個合理的 PHP 基礎知識體系. </p>
+            <p>如果你是新手, 請先看 <a href="http://www.phptherightway.com/">PHP The Right Way</a> , 裡面有中文版本, 此文件能為你構建一個合理的 PHP 基礎知識體系. </p>
 
             <p>第一次接觸 Laravel? 這裡是 <a href="http://laravel.com/docs/quick">官方文件</a>, 中文翻譯見 <a href="http://laravel.tw/doc/quick">Laravel 中文版</a>, Laravel 的出名, 也得益於這份撰寫精煉的文件, 值得多讀幾遍.</p>
 
@@ -24,7 +24,7 @@
 
             <h2 id="toc_7">Laravel?</h2>
 
-            <p>為什麼是 Laravel? 為什麼不是 CI, Symfony, CakePHP, ThinkPHP ... </p>
+            <p>為什麼是 Laravel? 為什麼不是 CodeIgniter, Symfony, CakePHP, ThinkPHP ... </p>
 
             <blockquote>
                 <p>Because Laravel is amazing and It is the future.</p>
