@@ -9,38 +9,39 @@
 <div class="panel">
     <div class="panel-body">
         <div class="markdown-body" id="emojify">
-            <h1 id="toc_0">關於我們 </h1>
-            <h2 id="toc_1">說明</h2>
+        
+            <h1 id="toc_0">關於 Laravel 台灣</h1>
+            
+            <h2 id="toc_1">Laravel 台灣</h2>
+            <p>Laravel 台灣是一個專門討論 Laravel 及 PHP 的正體中文社群，目前由眾多熱心的志工共同維護，致力於建置完整的 Laravel 正體中文社群。</p>
+            <p>歡迎對 Laravel PHP Framework 有興趣的朋友加入討論！任何關於 Laravel 的新聞、議題、疑問、分享都歡迎貼在論壇內。</p>
+            <p>您可以在以下地方找到我們：</p>
+            <ul>
+                <li><a href="http://laravel.tw/">網站</a></li>
+                <li><a href="http://laravel.tw/docs">官方文件翻譯</a></li>
+                <li><a href="https://www.facebook.com/groups/laravel.tw">Facebook 社團</a></li>
+                <li><a href="https://github.com/laravel-taiwan">Github Repo</a></li>
+                <li><a href="https://laraveltw.hackpad.com/">Hackpad 文件</a></li>
+            </ul>
+            
+            <h2 id="toc_2">給新鮮人的提示</h2>
+            <p>如果您是 PHP 新手，可以先參考 <a href="http://www.phptherightway.com/">PHP The Right Way</a>，可以為您建立完整的 PHP 基礎知識。</p>
+            <p>假如您是 Laravel 新手，可以先參考由社群志工翻譯的正體中文 <a href="http://laravel.tw/docs/quick">官方文件</a>。</p>
+            
+            <h2 id="toc_3">Laravel 學習資源</h2>
+            <p>若您對 Laravel 有興趣，想要持續學習，可先參考以下資料：</p>
+            <ul>
+                <li><a href="http://bit.ly/1rqVGaZ">給你一個使用 Laravel 的理由 - 聖佑</a></li>
+                <li><a href="http://bit.ly/1kSaY2J">實戰驚豔 Laravel 給你的5個驚嘆號 - 柏宏</a></li>
+                <li><a href="http://bit.ly/1txX9M5">FlyingV Laravel + AWS 經驗分享 - Eugene、Ronald</a></li>
+                <li><a href="http://bit.ly/1vR32FA">Laravel x RESTful x AWS - Seta Chuang</a></li>
+                <li><a href="http://www.laravel-dojo.com/">Laravel Dojo (Laravel 道場)</a></li>
+            </ul>
+            <p>或是直接在本論發表新文章，會有熱心的社群朋友跟您一起參與討論！</p>
 
-            <h2 id="toc_2">關於新手問題</h2>
-
-            <p>如果你是新手, 請先看 <a href="http://www.phptherightway.com/">PHP The Right Way</a> , 裡面有中文版本, 此文件能為你構建一個合理的 PHP 基礎知識體系. </p>
-
-            <p>第一次接觸 Laravel? 這裡是 <a href="http://laravel.com/docs/quick">官方文件</a>, 中文翻譯見 <a href="http://laravel.tw/doc/quick">Laravel 中文版</a>, Laravel 的出名, 也得益於這份撰寫精煉的文件, 值得多讀幾遍.</p>
-
-            <p>在學習上遇到問題的時候, 請先 Google. </p>
-
-            <p>如果覺得你的問題比較特別, 需要單獨提問的話, 請到 <a href="http://segmentfault.com/t/php">Segmentfault 的 PHP 分類下</a> 發表你的問題, 謝謝. </p>
-
-            <h2 id="toc_7">Laravel?</h2>
-
-            <p>為什麼是 Laravel? 為什麼不是 CodeIgniter, Symfony, CakePHP, ThinkPHP ... </p>
-
-            <blockquote>
-                <p>Because Laravel is amazing and It is the future.</p>
-            </blockquote>
-
-            <h2 id="toc_">關於 PHPHub</h2>
-            <p>PHPHub 是積極向上的 PHP &amp; Laravel 開發者社群</p>
-            <p>我們是一個公益組織, 致力於推動 Laravel, php-fig 等國外 PHP 新技術, 新理念在中國的發展.</p>
-
-            <p>在這裡沒有商業廣告, 沒有灌水, 沒有千篇一律新手問答, 有的是關於新技術的討論和分享. </p>
-
-            <p>名字的靈感來自偉大的 Github, <b>hub</b> 有 "中心", "集線器" 的意思, 意味著 PHPer 們齊聚一堂, 互相交換著信息流. </p>
-
-            <p>本項目基于 MIT Licence 開源, <a href="https://github.com/summerblue/phphub">原始碼在此 at Github</a>, 歡迎貢獻代碼, Feature Request 和 Bug Report <a href="https://github.com/summerblue/phphub/issues">請到此發表</a>.</p>
-
-
+            <h2 id="toc_4">關於 PHPHub</h2>
+            <p>本論壇使用 PHPHub 架設完成，程式碼使用 MIT Licence，您可以在 <a href="https://github.com/summerblue/phphub">Github</a> 上取得源始碼，感謝 <a href="https://github.com/summerblue">Charlie Jade (summerblue)</a> 的付出！</p>
+            <p>若您願意協助貢獻或是回報錯誤，歡迎至 Github 上<a href="https://github.com/summerblue/phphub/issues">建立 issue</a>。</p>
 
         </div>
 
