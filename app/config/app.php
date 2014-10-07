@@ -35,7 +35,6 @@ return array(
     |
     | Useful for CDN stuff, work with helper function `cdn`
     */
-
     'url_static' => getenv('url_static'),
 
     /*
