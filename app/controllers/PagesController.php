@@ -44,7 +44,7 @@ class PagesController extends \BaseController {
 	public function search()
 	{
 		$query = Purifier::clean(Input::get('q'));
-		return Redirect::away('https://www.google.com/search?q=site:forum.laravel.tw' . $query, 301);
+		return Redirect::away('https://www.google.com/search?q=site:forum.laravel.tw ' . $query, 301);
 	}
 
 	/**
