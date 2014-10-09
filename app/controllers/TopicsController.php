@@ -143,9 +143,9 @@ class TopicsController extends \BaseController implements CreatorListener
         return Redirect::route('topics.show', $topic->id);
     }
 
-    public function delete($id)
+    public function destroy($id)
     {
-        $topic = Topic::find($id);
+        $topic = Topic::findOrFail($id);
         $topic->delete();
         Flash::success(lang('Operation succeeded.'));
 

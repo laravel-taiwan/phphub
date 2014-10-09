@@ -16,6 +16,7 @@
                 'routes': {
                     'notificationsCount' : '{{ route('notifications.count') }}'
                 },
+                'token': '{{ csrf_token() }}',
             };
         </script>
         @yield('styles')
