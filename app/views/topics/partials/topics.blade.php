@@ -20,7 +20,7 @@
 
           <div class="media-heading">
             <a href="{{ route('topics.show', [$topic->id]) }}" title="{{{ $topic->title }}}">
-                {{{ $column ? str_limit($topic->title, '30') : str_limit($topic->title, '100') }}}
+                {{{ $topic->title }}}
             </a>
             @if ($topic->order > 0 && !Input::get('filter') && Route::currentRouteName() != 'home' )
                 <i class="fa fa-thumb-tack" style="color:#969595;padding-left: 2px;"></i>
@@ -38,12 +38,16 @@
             <a href="{{ route('nodes.show', [$topic->node->id]) }}" title="{{{ $topic->node->name }}}" {{ $topic->vote_count == 0 || 'class="remove-padding-left"'}}>
                 {{{ $topic->node->name }}}
             </a>
-            <span> • </span>
-            <a href="{{ route('users.show', [$topic->user_id]) }}" title="{{{ $topic->user->name }}}">
-                {{{ $topic->user->name }}}
-            </a>
-            <span> • </span>
-            <span class="timeago">{{ $topic->created_at }}</span>
+
+            @if ($topic->reply_count == 0)
+                <span> • </span>
+                <a href="{{ route('users.show', [$topic->user_id]) }}" title="{{{ $topic->user->name }}}">
+                    {{{ $topic->user->name }}}
+                </a>
+                <span> • </span>
+                <span class="timeago">{{ $topic->created_at }}</span>
+            @endif
+
             @if ($topic->reply_count > 0 && count($topic->lastReplyUser))
                 <span> • </span>{{ lang('Last Reply by') }}
                 <a href="{{{ URL::route('users.show', [$topic->lastReplyUser->id]) }}}">

@@ -3,10 +3,11 @@ body {
   /* for sticky footer */
   height: 100%;
 
-  font-size: 13px;
+  font-size: 14px;
   color: #333333;
-  font-family: "Heiti SC Light","Helvetica Neue",Verdana,微软雅黑,Arial,sans-serif;
-  background: #F7F6F2;
+  font-family: "lato-regular", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: #DFDFDF;
+  background-image: url('http://phphub.qiniudn.com/assets/images/bg.jpg');
 }
 .navbar-default{
     background-color: #fff;
@@ -24,6 +25,11 @@ body {
 .topic-list {
   .list-group-item {
     height: 71px;
+  }
+  .media-heading {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 abbr[data-original-title], abbr[title] {
@@ -387,7 +393,7 @@ box-shadow:         4px 4px 5px 0px rgba(50, 50, 50, 0.19);
     font-size: 22px;
     color: #333;
     text-align: left;
-    line-height: 100%;
+    line-height: 135%;
     margin-bottom: 8px;
     font-weight: bold;
   }
@@ -598,7 +604,7 @@ box-shadow:         4px 4px 5px 0px rgba(50, 50, 50, 0.19);
 @media (min-width: 1000px) {
 
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
-  width: 1000px;
+  width: 1050px;
 }
 
 }
@@ -910,4 +916,5 @@ div#reply_notice {
 div#preview-box {
     border: dashed 1px;
     margin-bottom: 80px;
+    background: rgb(250, 245, 235);
 }

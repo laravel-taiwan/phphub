@@ -9,7 +9,6 @@
 <div class="col-md-9 topics-index main-col">
     <div class="panel panel-default">
 
-
         <div class="panel-heading">
           @if (isset($node))
             <div class="pull-left panel-title">{{ lang('Current Node') }}: {{{ $node->name }}}</div>
@@ -28,7 +27,7 @@
 
             <div class="panel-footer text-right remove-padding-horizontal pager-footer">
                 <!-- Pager -->
-                {{ $topics->appends(Request::except('page'))->links(); }}
+                {{ $topics->appends(Request::except('page', '_pjax'))->links(); }}
             </div>
 
         @else
