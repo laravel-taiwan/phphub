@@ -19,5 +19,13 @@ return [
     'url'           => 'http://localhost:8000/',
     // 'timezone'      => 'Asia/Shanghai',
     // 'locale'        => 'zh-CN',
-    // 'url_static'    => 'http://phphub.qiniudn.com',
+    // 'url_static'    => 'https://dn-phphub.qbox.me',
+    //
+
+    'BACK_MANAGER_ROOT' => '',
+    'BACK_MANAGER_DROPBOX_token' => '',
+    'BACK_MANAGER_DROPBOX_key' => '',
+    'BACK_MANAGER_DROPBOX_secret' => '',
+    'BACK_MANAGER_DROPBOX_app' => '',
+    'BACK_MANAGER_DROPBOX_root' => '',
 ];
